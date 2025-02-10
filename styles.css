@@ -1,0 +1,79 @@
+* {
+  font-family: Euclid, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #050e25;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #050e25;
+  overflow: hidden;
+}
+
+.center {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  max-width: 400px;
+  margin: 15px auto;
+}
+@media only screen and (max-width: 768px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  #logo {
+    max-width: 250px;
+  }
+}
+
+#logo img {
+  height: 100%;
+  width: 100%;
+}
+
+#response-text {
+  transition-duration: 200ms;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+}
+
+#response-text.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#response-button {
+  border: none;
+  transition-duration: 200ms;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  font-weight: bold;
+  color: #037dd6;
+  border-radius: 100px;
+  margin: 10px;
+  margin-top: 21px;
+  height: 45px;
+  width: 170px;
+}
+
+#response-button.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#response-button:hover {
+  cursor: pointer;
+  box-shadow: lightgray 0px 0px 10px;
+}
